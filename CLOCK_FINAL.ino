@@ -21,7 +21,7 @@
 #include <vn_lunar.h>
 
 #define DEFAULT_MQTT_HOST "mqtt1.eoh.io"
-#define ERA_AUTH_TOKEN "0b5d8515-c9d5-4de9-90df-aa8a9944add2"
+#define ERA_AUTH_TOKEN "------------------------"
 #define TIME_UPDATE 10000UL
 
 #include <ERa.hpp>
@@ -62,10 +62,8 @@ ERaTimer timer;
 
 time_t lastUpdateTime = 0;
 
-const char* ssid = "Connecting..";
-const char* password = "nonotpass";
-/*const char* ssid = "eoh.io";
-const char* password = "Eoh@2020";*/
+const char* ssid = "id";
+const char* password = "pass";
 
 //String URL = "https://api.openweathermap.org/data/2.5/weather?lat=10.75&lon=106.6667&appid=82d54db1723be3afdd4077b426dc1b99";
 String URL = "http://api.openweathermap.org/data/2.5/weather?";
